@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Вепа Бегмедов</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/png">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header-container">
+        <div>
+            <h1 id="header-name">Вепа Бегмедов</h1>
+            <p id="header-profession">Веб-разработчик</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/VepaB" target="_blank">
+                <img src="./img/github.png" alt="GitHub">
+            </a>
+            <a href="https://instagram.com/begmedow.job" target="_blank">
+                <img src="./img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://t.me/lazzzzy_cat" target="_blank">
+                <img src="./img/telegram.png" alt="Telegram">
+            </a>
+            <a href="mailto:v.begmedow@gmail.com" target="_blank">
+                <img src="./img/gmail.png" alt="Gmail">
+            </a>
+            <div class="language-icons">
+                <a href="#" class="selected"><img src="./img/russian.png" alt="Russian"></a>
+                <a href="#"><img src="./img/english.png" alt="English"></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="photo">
+            <img src="./img/profile.png" alt="Ваше фото">
+        </div>
+
+        <nav>
+            <a href="#" id="nav-about" onclick="showContent('about')">Обо мне</a>
+            <a href="#" id="nav-skills" onclick="showContent('skills')">Навыки</a>
+            <a href="#" id="nav-projects" onclick="showContent('projects')">Проекты</a>
+            <a href="#" id="nav-additional" onclick="showContent('additional')">Дополнительная информация</a>
+        </nav>
+
+        <div class="content-wrapper">
+            <div id="about" class="content active">
+                <h2 id="contact-title">Контактная информация</h2>
+                <ul>
+                    <li id="contact-phone">Телефон: +993 65 624071</li>
+                    <li id="contact-email">Email: <a href="mailto:v.begmedow@gmail.com" target="_blank">v.begmedow@gmail.com</a></li>
+                    <li id="contact-github">GitHub: <a href="https://github.com/VepaB" target="_blank">VepaB</a></li>
+                    <li id="contact-instagram">Instagram: <a href="https://instagram.com/begmedow.job" target="_blank">@begmedow.job</a></li>
+                    <li id="contact-telegram">Telegram: <a href="https://t.me/lazzzzy_cat" target="_blank">@lazzzzy_cat</a></li>
+                </ul>
+                <h2 id="about-title">Обо мне</h2>
+                <p id="about-description">
+                    Меня зовут Бегмедов Вепа, я веб-разработчик, специализирующийся на создании адаптивных, функциональных и эстетичных веб-сайтов. 
+                    Моей страстью является разработка современных веб-приложений, которые обеспечивают превосходный пользовательский опыт и высокую производительность. 
+                    Я стремлюсь к тому, чтобы каждая моя работа была не только технологически продвинутой, но и удобной, интуитивно понятной и визуально привлекательной.
+                </p>
+            </div>
+
+            <div id="skills" class="content">
+                <h2 id="skills-title">Навыки</h2>
+                <ul id="skills-list">
+                    <li>Фронтенд: HTML5, CSS3, JavaScript (ES6+), React, Vue.js, TailwindCSS, Bootstrap.</li>
+                    <li>Бэкенд: Базовые знания Node.js, Django, Laravel, PHP.</li>
+                    <li>Базы данных: PostgreSQL, MySQL.</li>
+                    <li>Инструменты: Git, GitHub, GitLab, VS Code, Figma, Postman, Docker.</li>
+                    <li>Дополнительные технологии: REST API, Prisma ORM, Sequelize ORM.</li>
+                    <li>Хостинг и деплоймент: Render.com, Vercel, Netlify.</li>
+                </ul>
+            </div>
+
+            <div id="projects" class="content">
+                <h2 id="projects-title">Проекты</h2>
+                <ul id="projects-list">
+                    <li>
+                        <strong>Интернет-магазин для онлайн-заказов:</strong> Разработка сайта для предоставления широкого спектра услуг с возможностью онлайн-заказа и доставки.
+                        <ul>
+                            <li>Онлайн-каталог услуг с детальным описанием.</li>
+                            <li>Форма оформления заказа с выбором параметров.</li>
+                            <li>Интеграция с системами оплаты и доставки.</li>
+                            <li>Адаптивный дизайн для различных устройств.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Каталог товаров с рассрочкой:</strong> Разработка интернет-магазина с каталогом товаров, возможностью покупки в рассрочку и интеграцией социальных сетей.
+                        <ul>
+                            <li>Рассрочка с автоматическим расчетом платежей.</li>
+                            <li>Социальные кнопки с текстовыми подсказками.</li>
+                            <li>Фильтрация и сортировка товаров.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Сайт для каталогизации и поиска:</strong> Разработка сайта для удобного поиска и каталогизации объектов.
+                        <ul>
+                            <li>Каталог с возможностью поиска и фильтрации.</li>
+                            <li>Интеграция контактных форм.</li>
+                            <li>SEO-оптимизация.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Система управления документами и сотрудниками:</strong> Создана система для ведения клиентской базы, отслеживания документов и управления инвентарем.
+                        <ul>
+                            <li>Автоматические уведомления о сроках.</li>
+                            <li>Генерация отчетов и управление доступом.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Интернет-магазин типографии — AlemPrint:</strong> В настоящее время разрабатываю сайт для типографии AlemPrint, предоставляющий широкий спектр полиграфических услуг с возможностью онлайн-заказа и доставки по всему Туркменистану.
+                        <ul>
+                            <li>Онлайн-каталог услуг с детальным описанием.</li>
+                            <li>Форма оформления заказа с выбором параметров печати.</li>
+                            <li>Интеграция с системами оплаты и доставки.</li>
+                            <li>Адаптивный дизайн для различных устройств.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="additional" class="content">
+                <h2 id="additional-title">Дополнительная информация</h2>
+                <ul id="additional-list">
+                    <li>Самоучка с опытом работы над реальными проектами.</li>
+                    <li>Готов к удаленной работе или работе в офисе.</li>
+                    <li>Способен быстро адаптироваться к новым задачам и технологиям.</li>
+                    <li>Интересуюсь долгосрочными проектами и улучшением профессиональных навыков.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Вепа Бегмедов | <a href="https://github.com/VepaB" target="_blank">GitHub</a></p>
+    </footer>
+</body>
+</html>

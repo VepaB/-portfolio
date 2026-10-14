@@ -14,8 +14,33 @@ function updateLanguageSelection(language) {
     document.querySelector(`.language-icons img[alt='${language === 'ru' ? 'Russian' : 'English'}']`).parentElement.classList.add('selected');
 }
 
+function renderCases(translations) {
+    const cases = translations.cases;
+    if (!cases) return;
+
+    Object.entries(cases.items).forEach(([key, item]) => {
+        const card = document.querySelector(`.case-card[data-case="${key}"]`);
+        if (!card) return;
+
+        card.querySelector(".case-title").textContent = item.title;
+        card.querySelector(".case-description").textContent = item.description;
+        card.querySelector(".case-stack-label").textContent = cases.stackLabel;
+        card.querySelector(".case-stack-value").textContent = item.stack;
+
+        const featureList = card.querySelector(".case-features");
+        featureList.innerHTML = "";
+        item.features.forEach((feature) => {
+            const li = document.createElement("li");
+            li.textContent = feature;
+            featureList.appendChild(li);
+        });
+
+        card.querySelector(".btn-demo").setAttribute("aria-label", item.demoLabel);
+        card.querySelector(".btn-code").setAttribute("aria-label", item.codeLabel);
+    });
+}
+
 async function loadTranslations(language) {
-    updateLanguageSelection(language);
     if (language === "ru") {
         location.reload();
         return;
@@ -23,7 +48,12 @@ async function loadTranslations(language) {
 
     try {
         const response = await fetch(`translations/${language}.json`);
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
         const translations = await response.json();
+        updateLanguageSelection(language);
+        document.documentElement.lang = language;
 
         document.querySelector(".header-container h1").textContent =
             translations.header.name;
@@ -63,7 +93,11 @@ async function loadTranslations(language) {
         projectsSection.querySelector("h2").textContent =
             translations.projects.title;
 
-        const projectList = projectsSection.querySelector("ul");
+        renderCases(translations);
+        document.getElementById("other-projects-title").textContent =
+            translations.projects.otherTitle;
+
+        const projectList = document.getElementById("projects-list");
         projectList.innerHTML = "";
         translations.projects.items.forEach((project) => {
             const li = document.createElement("li");
@@ -91,6 +125,7 @@ async function loadTranslations(language) {
         });
     } catch (error) {
         console.error("Error loading translations:", error);
+        updateLanguageSelection(document.documentElement.lang || "ru");
     }
 }
 

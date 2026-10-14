@@ -1,95 +1,114 @@
 {
-    "header": {
-      "name": "Vepa Begmedow",
-      "profession": "Web Developer"
-    },
-    "contact": {
-      "title": "Contact Information",
-      "phone": "Phone",
-      "email": "Email",
-      "github": "GitHub",
-      "instagram": "Instagram",
-      "telegram": "Telegram"
-    },
-    "about": {
-      "title": "About Me",
-      "description": "My name is Vepa Begmedow, I am a web developer specializing in creating responsive, functional, and aesthetically pleasing websites. My passion is developing modern web applications that provide excellent user experience and high performance. I strive to make each of my works not only technologically advanced but also convenient, intuitive, and visually appealing."
-    },
-    "skills": {
-      "title": "Skills",
-      "list": [
-        "Frontend: HTML5, CSS3, JavaScript (ES6+), React, Vue.js, TailwindCSS, Bootstrap.",
-        "Backend: Basic knowledge of Node.js, Django, Laravel, PHP.",
-        "Databases: PostgreSQL, MySQL.",
-        "Tools: Git, GitHub, GitLab, VS Code, Figma, Postman, Docker.",
-        "Additional technologies: REST API, Prisma ORM, Sequelize ORM.",
-        "Hosting and deployment: Render.com, Vercel, Netlify."
-      ]
-    },
-    "projects": {
-      "title": "Projects",
-      "items": [
-        {
-          "name": "Online store for online orders",
-          "description": "Development of a website to provide a wide range of services with the possibility of online ordering and delivery.",
-          "features": [
-            "Online catalog of services with detailed descriptions.",
-            "Order form with parameter selection.",
-            "Integration with payment and delivery systems.",
-            "Responsive design for various devices."
-          ]
-        },
-        {
-          "name": "Catalog of goods with installment plan",
-          "description": "Development of an online store with a catalog of goods, the possibility of purchasing in installments, and integration with social networks.",
-          "features": [
-            "Installment plan with automatic payment calculation.",
-            "Social buttons with text hints.",
-            "Filtering and sorting of goods."
-          ]
-        },
-        {
-          "name": "Site for cataloging and searching",
-          "description": "Development of a site for convenient search and cataloging of objects.",
-          "features": [
-            "Catalog with search and filtering capabilities.",
-            "Integration of contact forms.",
-            "SEO optimization."
-          ]
-        },
-        {
-          "name": "Document and employee management system",
-          "description": "Created a system for managing client database, tracking documents, and managing inventory.",
-          "features": [
-            "Automatic deadline notifications.",
-            "Report generation and access management."
-          ]
-        },
-        {
-          "name": "Printing house online store — AlemPrint",
-          "description": "Currently developing a website for the AlemPrint printing house, providing a wide range of printing services with the possibility of online ordering and delivery throughout Turkmenistan.",
-          "features": [
-            "Online catalog of services with detailed descriptions.",
-            "Order form with printing parameter selection.",
-            "Integration with payment and delivery systems.",
-            "Responsive design for various devices."
-          ]
-        }
-      ]
-    },
-    "additional": {
-      "title": "Additional Information",
-      "list": [
-        "Self-taught with experience in real projects.",
-        "Ready for remote work or in-office work.",
-        "Able to quickly adapt to new tasks and technologies.",
-        "Interested in long-term projects and improving professional skills."
-      ]
-    },
-    "navigation": {
-        "about": "About Me",
-        "skills": "Skills",
-        "projects": "Projects",
-        "additional": "Additional Information"
+  "header": {
+    "name": "Vepa Begmedow",
+    "profession": "Web Developer"
+  },
+  "contact": {
+    "title": "Contact Information",
+    "phone": "Phone",
+    "email": "Email",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "telegram": "Telegram"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "My name is Vepa Begmedow, I am a web developer specializing in creating responsive, functional, and aesthetically pleasing websites. My passion is developing modern web applications that provide excellent user experience and high performance. I strive to make each of my works not only technologically advanced but also convenient, intuitive, and visually appealing."
+  },
+  "skills": {
+    "title": "Skills",
+    "list": [
+      "Frontend: HTML5, CSS3, JavaScript (ES6+), React, Vue.js, TailwindCSS, Bootstrap.",
+      "Backend: Basic knowledge of Node.js, Django, Laravel, PHP.",
+      "Databases: PostgreSQL, MySQL.",
+      "Tools: Git, GitHub, GitLab, VS Code, Figma, Postman, Docker.",
+      "Additional technologies: REST API, Prisma ORM, Sequelize ORM.",
+      "Hosting and deployment: Render.com, Vercel, Netlify."
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "Online store for online orders",
+        "description": "Development of a website to provide a wide range of services with the possibility of online ordering and delivery.",
+        "features": [
+          "Online catalog of services with detailed descriptions.",
+          "Order form with parameter selection.",
+          "Integration with payment and delivery systems.",
+          "Responsive design for various devices."
+        ]
+      },
+      {
+        "name": "Catalog of goods with installment plan",
+        "description": "Development of an online store with a catalog of goods, the possibility of purchasing in installments, and integration with social networks.",
+        "features": [
+          "Installment plan with automatic payment calculation.",
+          "Social buttons with text hints.",
+          "Filtering and sorting of goods."
+        ]
+      },
+      {
+        "name": "Site for cataloging and searching",
+        "description": "Development of a site for convenient search and cataloging of objects.",
+        "features": [
+          "Catalog with search and filtering capabilities.",
+          "Integration of contact forms.",
+          "SEO optimization."
+        ]
+      },
+      {
+        "name": "Document and employee management system",
+        "description": "Created a system for managing client database, tracking documents, and managing inventory.",
+        "features": [
+          "Automatic deadline notifications.",
+          "Report generation and access management."
+        ]
+      }
+    ],
+    "otherTitle": "Other projects"
+  },
+  "additional": {
+    "title": "Additional Information",
+    "list": [
+      "Self-taught with experience in real projects.",
+      "Ready for remote work or in-office work.",
+      "Able to quickly adapt to new tasks and technologies.",
+      "Interested in long-term projects and improving professional skills."
+    ]
+  },
+  "navigation": {
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "additional": "Additional Information"
+  },
+  "cases": {
+    "stackLabel": "Stack:",
+    "items": {
+      "portfolio": {
+        "title": "My portfolio",
+        "description": "Personal portfolio website: a page with About, Skills and Projects sections, contacts and a language switch.",
+        "features": [
+          "Section switching without reloading the page.",
+          "Russian and English versions: the English text is loaded from a JSON file.",
+          "Responsive layout for phone and desktop."
+        ],
+        "stack": "HTML, CSS, JavaScript. Static files are served by a Node.js/Express server.",
+        "demoLabel": "Open demo: My portfolio",
+        "codeLabel": "Open code on GitHub: My portfolio"
+      },
+      "alemprint": {
+        "title": "AlemPrint",
+        "description": "Website of the AlemPrint printing house: the home page interface and printing service pages. Work in progress.",
+        "features": [
+          "Home page with service cards.",
+          "Pages for individual printing services."
+        ],
+        "stack": "HTML, CSS, JavaScript; Webpack build.",
+        "demoLabel": "Open demo: AlemPrint",
+        "codeLabel": "Open code on GitHub: AlemPrint"
+      }
     }
   }
+}
